@@ -3,6 +3,8 @@ import 'package:planets/model/Planet.dart';
 import 'package:planets/ui/common/PlanetSummary.dart';
 import 'package:planets/ui/common/Separator.dart';
 import 'package:planets/ui/text_style.dart';
+import 'package:transparent_image/transparent_image.dart';
+
 
 class DetailPage extends StatelessWidget {
   final Planet planet;
@@ -12,8 +14,9 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _background = Container(
-      child: Image.network(
-        planet.picture,
+      child: FadeInImage.memoryNetwork(
+        image: planet.picture,
+        placeholder: kTransparentImage,
         fit: BoxFit.cover,
         height: 300,
       ),

@@ -72,27 +72,25 @@ class PlanetSummary extends StatelessWidget {
       ),
     );
 
-    final planetCard = Hero(
-        tag: 'hero-planet-card-${planet.id}',
-        child: Container(
-          child: planetCardContent,
-          height: horizontal ? 124.0 : 154.0,
-          margin: horizontal
-              ? EdgeInsets.only(left: 46.0)
-              : EdgeInsets.only(top: 72.0),
-          decoration: BoxDecoration(
-            color: Color(0xFF434273),
-            shape: BoxShape.rectangle,
-            borderRadius: BorderRadius.circular(8.0),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                color: Colors.black12,
-                blurRadius: 10.0,
-                offset: Offset(0.0, 10.0),
-              ),
-            ],
+    final planetCard = Container(
+      child: planetCardContent,
+      height: horizontal ? 154.0 : 154.0,
+      margin: horizontal
+          ? EdgeInsets.only(left: 46.0)
+          : EdgeInsets.only(top: 72.0),
+      decoration: BoxDecoration(
+        color: Color(0xFF434273),
+        shape: BoxShape.rectangle,
+        borderRadius: BorderRadius.circular(8.0),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: Colors.black12,
+            blurRadius: 10.0,
+            offset: Offset(0.0, 10.0),
           ),
-        ));
+        ],
+      ),
+    );
 
     return GestureDetector(
         onTap: horizontal
