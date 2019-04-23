@@ -1,16 +1,11 @@
 # planets
 
-A new Flutter project.
+A little example app with wacky things I want to mess with like transitions, or all the different and weird ways of loading an image in dart.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## It looks like this:
+               
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/1675595/56585907-a197d600-65d6-11e9-87bf-c10f2eb6b81f.png" width="250" />
+  <img src="https://user-images.githubusercontent.com/1675595/56585917-a6f52080-65d6-11e9-9c2e-37501e64c556.png" width="250" /> 
+  <img src="https://user-images.githubusercontent.com/1675595/56585924-a9f01100-65d6-11e9-9c84-2a56fad7f5c7.png" width="250" />
+</p>
