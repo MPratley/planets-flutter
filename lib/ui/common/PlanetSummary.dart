@@ -11,6 +11,16 @@ class PlanetSummary extends StatelessWidget {
   PlanetSummary(this.planet, {this.horizontal = true});
   PlanetSummary.vertical(this.planet) : horizontal = false;
 
+  Widget _planetValue({String value, String image}) {
+    return new Container(
+      child: new Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+        new Image.asset(image, height: 12.0),
+        new Container(width: 8.0),
+        new Text(value, style: regularTextStyle),
+      ]),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final planetThumbnail = new Container(
@@ -26,16 +36,6 @@ class PlanetSummary extends StatelessWidget {
         ),
       ),
     );
-
-    Widget _planetValue({String value, String image}) {
-      return new Container(
-        child: new Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
-          new Image.asset(image, height: 12.0),
-          new Container(width: 8.0),
-          new Text(value, style: regularTextStyle),
-        ]),
-      );
-    }
 
     final planetCardContent = new Container(
       margin: new EdgeInsets.fromLTRB(
@@ -71,7 +71,6 @@ class PlanetSummary extends StatelessWidget {
         ],
       ),
     );
-
     final planetCard = Container(
       child: planetCardContent,
       height: horizontal ? 154.0 : 154.0,
