@@ -1,5 +1,7 @@
 # planets
 
+[![Lint Status](https://cloud.drone.io/api/badges/MPratley/planets-flutter/status.svg)](https://cloud.drone.io/MPratley/planets-flutter)
+
 A little example app with wacky things I want to mess with like transitions, or all the different and weird ways of loading an image in dart.
 
 I'll probably make a clone of this for pokemon.
