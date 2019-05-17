@@ -4,6 +4,5 @@ name: default
 steps:
 - name: build
   image: cirrusci/flutter
-  privileged: true
   commands:
-  - flutter analyze
+  - echo ahhhhhhhhh
